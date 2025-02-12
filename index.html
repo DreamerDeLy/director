@@ -7,7 +7,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Jersey+15&family=Zen+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 	<meta property="og:title" content="Dmytro Obukhov / Director, DoP" />
 	<meta property="og:description" content="Director, DoP, Colorist. Based in Kyiv, Ukraine." />
@@ -31,31 +31,19 @@
 			font-family: Helvetica, Arial, sans-serif;
 
 			background-color: hsl(221, 20%, 10%);
+
+			font-size: 1.4rem;
 		}
+
 		img {
 			width: 100%;
 			height: auto;
 		}
 
-		.zen-dots-regular {
-			font-family: "Zen Dots", serif;
-			font-weight: 400;
-			font-style: normal;
+		code {
+			font-family: "Roboto Mono", monospace;
+			font-size: small;
 		}
-
-		.barrio-regular {
-			font-family: "Barrio", serif;
-			font-weight: 400;
-			font-style: normal;
-		}
-
-		.jersey-15-regular {
-			font-family: "Jersey 15", serif;
-			font-weight: 400;
-			font-style: normal;
-		}
-
-
 		
 
 		.still {
@@ -89,7 +77,7 @@
 			font-family: "Jersey 15", serif;
 
 			margin: -4em;
-			padding: 7em;
+			padding: 5em;
 
 			height: 100%;
 
@@ -130,6 +118,10 @@
 			transition: all 0.5s;
 		}
 
+		.still_text code {
+			font-size: small;
+		}
+
 		.still .still_text div {
 			transition: all 0.5s;
 		}
@@ -147,7 +139,6 @@
 			padding-left: 10%;
 			padding-right: 13%;
 
-
 			width: 100%;
 
 			box-sizing: border-box;
@@ -161,7 +152,7 @@
 			width: 100%;
 		}
 
-		.header_container img {
+		.header_signature {
 			filter: invert(1);
 
 			position: absolute;
@@ -174,6 +165,74 @@
 
 			opacity: 0.45;
 		}
+
+		.socials {
+			margin-top: 0.4em;
+		}
+
+		.socials img {
+			width: 0.8rem; 
+			filter: invert(1);
+
+			margin-right: 0.2em;
+		}
+
+		.socials a {
+			text-decoration: none;
+		}
+
+		.socials_footer img {
+			width: 1rem;
+			margin-right: 0.5em;
+		}
+
+		/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+			.still_text h2 {
+				font-size: 1.4rem;
+			}
+
+			.header {
+				flex-direction: column;
+				padding-top: 2em;
+				padding-bottom: 2em;
+
+				padding-left: 2em;
+				padding-right: 1.5em;
+
+				align-items: flex-start;
+			}
+
+			.header_signature {
+				left: 70%;
+
+    			transform: translate(-0%, -50%);
+			}
+		}
+
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+			.still_text {
+				padding: 7em;
+			}
+		}
+
+		/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 768px) {
+
+		}
+
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+
+		}
+
+		/* Extra large devices (large laptops and desktops, 1200px and up) */
+		@media only screen and (min-width: 1200px) {
+			.still_text h2 {
+				font-size: 3rem;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -185,12 +244,23 @@
 				Obukhov<br>
 			</h1>
 	
-			<div>
-				Director, DoP, Colorist<br>
-				<code>Based in Kyiv, Ukraine</code>
+			<div class="header_info">
+				<div style="margin-bottom: -0.1em;">Director, DoP, Colorist</div>
+				<code>Based in Kyiv, Ukraine</code><br>
+				<div class="socials">
+					<a href="https://www.instagram.com/delydreamer/" target="_blank">
+						<img src="images/socials/instagram-brands-solid.svg" alt="instagram">
+					</a>
+					<a href="https://t.me/delydreamer" target="_blank">
+						<img src="images/socials/telegram-brands-solid.svg" alt="telegram">
+					</a>
+					<!-- <a href="https://www.tiktok.com/@delydreamer" target="_blank">
+						<img src="images/socials/tiktok-brands-solid.svg" alt="tiktok">
+					</a> -->
+				</div>
 			</div>
 		</div>
-		<img src="images/siganature-dely-1.png" alt="signature">
+		<img class="header_signature" src="images/siganature-dely-1.png" alt="signature">
 	</div>
 	<div class="still">
 		<img src="images/vlcsnap-2025-02-12-05h42m36s319.png" style="margin-bottom: 2%;" alt="">
@@ -200,7 +270,19 @@
 			</h2>
 			<div>
 				DoP<br>
-				<code>Music video / 2023</code>
+				<code>Music video / 2024</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/vlcsnap-2025-02-12-08h59m53s992.png" style="margin-bottom: 8%;" alt="">
+		<div class="still_text">
+			<h2>
+				SAD_NOVELIST
+			</h2>
+			<div>
+				Director, DoP<br>
+				<code>Music video / 2024</code>
 			</div>
 		</div>
 	</div>
@@ -310,6 +392,28 @@
 				Director, DoP<br>
 				<code>Music video / 2021</code>
 			</div>
+		</div>
+	</div>
+
+	<div style="display: flex; align-items: center; gap: 0.5em; flex-direction: column; padding: 2em 1em;">
+		<div>
+		</div>
+		<div class="socials socials_footer">
+			<a href="https://www.instagram.com/delydreamer/" target="_blank">
+				<img src="images/socials/instagram-brands-solid.svg" alt="instagram">
+			</a>
+			<a href="https://t.me/delydreamer" target="_blank">
+				<img src="images/socials/telegram-brands-solid.svg" alt="telegram">
+			</a>
+			<a href="https://www.tiktok.com/@delydreamer" target="_blank">
+				<img src="images/socials/tiktok-brands-solid.svg" alt="tiktok">
+			</a>
+		</div>
+		<img src="images/siganature-dely-1.png" alt="signature" style="width: 10em; filter: invert(1); margin-right: 0.8%;">
+		<div>
+			<code>
+				&copy; 2025 Dmytro "DeLy" Obukhov
+			</code>
 		</div>
 	</div>
 </body>
