@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dmytro DeLy Obukhov</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Jersey+15&family=Zen+Dots&display=swap" rel="stylesheet">
+
+	<style>
+		:root {
+			color-scheme: dark;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+
+			font-family: Helvetica, Arial, sans-serif;
+
+			background-color: hsl(221, 20%, 10%);
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		.zen-dots-regular {
+			font-family: "Zen Dots", serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		.barrio-regular {
+			font-family: "Barrio", serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		.jersey-15-regular {
+			font-family: "Jersey 15", serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+
+
+		
+
+		.still {
+			width: 100%; 
+			/* aspect-ratio: 21 / 9;  */
+			aspect-ratio: 3 / 1; 
+			overflow: hidden;
+
+			position: relative;
+
+			display: flex;
+            align-items: center;
+            /* justify-content: center; */
+		}
+
+		.still img {
+			/* height: 100%; */
+			object-fit: cover;
+
+			transition: transform 0.3s ease-in-out;
+			
+		}
+
+		.still:hover img {
+			transform: scale(1.05);
+		}
+
+		.still_text {
+			position: absolute;
+
+			font-family: "Jersey 15", serif;
+
+			margin: -4em;
+			padding: 7em;
+
+			height: 100%;
+
+			transition: all 0.5s;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+		}
+
+		.still:hover .still_text {
+			opacity: 0.9;
+
+			transform: scale(0.95);
+		}
+
+		.still:hover .still_text h2 {
+			letter-spacing: 1rem;
+		}
+
+		.still:hover .still_text div {
+			letter-spacing: 0.1rem;
+		}
+
+		.still_text h2 {
+			color: white;
+			font-size: 2rem;
+			font-weight: bolder;
+			text-transform: uppercase;
+			letter-spacing: 0.5rem;
+
+			text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+
+			margin-bottom: 0.0em;
+
+			transition: all 0.5s;
+		}
+
+		.still .still_text div {
+			transition: all 0.5s;
+		}
+
+		.header {
+			aspect-ratio: 4 / 1;
+			max-height: 18em;
+
+			display: flex;
+			/* justify-content: center; */
+			justify-content: space-between;
+			align-items: center;
+
+			/* padding: 2em; */
+			padding-left: 10%;
+			padding-right: 13%;
+
+
+			width: 100%;
+
+			box-sizing: border-box;
+
+			font-family: "Jersey 15", serif;
+		}
+
+		.header_container {
+			position: relative;
+
+			width: 100%;
+		}
+
+		.header_container img {
+			filter: invert(1);
+
+			position: absolute;
+			top: 50%;
+    		left: 50%; 
+
+    		transform: translate(-50%, -50%); 
+
+			width: 20%;
+
+			opacity: 0.45;
+		}
+	</style>
+</head>
+<body>
+	<div class="header_container">
+		<div class="header">
+			<h1>
+				Dmytro<br>
+				<span style="font-weight: 100;">DeLy</span><br>
+				Obukhov<br>
+			</h1>
+	
+			<div>
+				Director, DoP, Colorist<br>
+				<code>Based in Kyiv, Ukraine</code>
+			</div>
+		</div>
+		<img src="images/siganature-dely-1.png" alt="signature">
+	</div>
+	<div class="still">
+		<img src="images/vlcsnap-2025-02-12-05h42m36s319.png" style="margin-bottom: 2%;" alt="">
+		<div class="still_text">
+			<h2>
+				INDUSTRIAL STUS
+			</h2>
+			<div>
+				DoP<br>
+				<code>Music video / 2023</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/vlcsnap-2025-02-12-05h35m26s403.png" style="margin-top: 2%;" alt="">
+		<div class="still_text">
+			<h2>
+				CONFESSION
+			</h2>
+			<div>
+				Director<br>
+				<code>Music video / 2023</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/seconds_01.00_00_59_09.Still005.png" style="margin-bottom: 1%;" alt="">
+		<div class="still_text">
+			<h2>
+				SECONDS
+			</h2>
+			<div>
+				Director, DoP<br>
+				<code>Short / 2023</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/vlcsnap-2025-02-12-05h30m52s101.png" style="margin-top: 8%;" alt="">
+		<div class="still_text">
+			<h2>
+				SENSE
+			</h2>
+			<div>
+				DoP<br>
+				<code>Short / 2023</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/02.00_00_57_11.Still002.png" alt="" style="margin-top: 6%;">
+		<div class="still_text">
+			<h2>
+				THE SAME PLACE
+			</h2>
+			<div>
+				Director, DoP<br>
+				<code>Short / 2022</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/01.00_00_50_22.Still001.png" alt="">
+		<div class="still_text">
+			<h2>
+				ONE CHAIR STORY
+			</h2>
+			<div>
+				Director, DoP<br>
+				<code>Short / 2022</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/03_1.00_02_50_03.Still004.png" alt="" style="margin-top: 8%;">
+		<div class="still_text">
+			<h2>
+				ECHO
+			</h2>
+			<div>
+				Director, DoP<br>
+				<code>Music video / 2022</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/02.00_00_44_24.Still008.png" alt="" style="margin-top: 20%;">
+		<div class="still_text">
+			<h2>
+				SAD_NOVELIST
+			</h2>
+			<div>
+				Director, DoP<br>
+				<code>Music video / 2022</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/Render2_1.00_02_32_23.Still007.png" alt="" style="margin-top: 10%;">
+		<div class="still_text">
+			<h2>
+				7TEEN'S
+			</h2>
+			<div>
+				DoP<br>
+				<code>Backstage video / 2021</code>
+			</div>
+		</div>
+	</div>
+	<div class="still">
+		<img src="images/main_final.00_00_39_04.Still003.png" alt="" style="margin-top: 15%">
+		<div class="still_text">
+			<h2>
+				EXA V GIVEAWAY
+			</h2>
+			<div>
+				Director, DoP<br>
+				<code>Music video / 2021</code>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
