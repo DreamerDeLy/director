@@ -1,0 +1,47 @@
+:root {
+	color-scheme: dark;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: Helvetica, Arial, sans-serif;
+
+	background-color: hsl(221, 20%, 10%);
+
+	font-size: 1.4rem;
+
+	font-family: "Roboto Mono", monospace;
+}
+
+iframe {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+
+.content {
+	padding: 1em;
+
+	font-size: medium;
+
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 1em;
+	width: 100%;
+	box-sizing: border-box;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.description {
+	padding: 1em;
+	width: 100%;
+	box-sizing: border-box;
+}

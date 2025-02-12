@@ -46,6 +46,34 @@
 			font-family: "Roboto Mono", monospace;
 			font-size: small;
 		}
+
+		button {
+			border: none;
+			margin: 0;
+			padding: 0;
+			width: auto;
+			overflow: visible;
+
+			text-align: inherit;
+
+			background: transparent;
+
+			/* inherit font & color from ancestor */
+			color: inherit;
+			font: inherit;
+
+			/* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+			line-height: normal;
+
+			/* Corrects font smoothing for webkit */
+			-webkit-font-smoothing: inherit;
+			-moz-osx-font-smoothing: inherit;
+
+			/* Corrects inability to style clickable `input` types in iOS */
+			appearance: none;
+
+			cursor: pointer;
+		}
 		
 
 		.still {
@@ -89,7 +117,7 @@
 			flex-direction: column;
 			justify-content: center;
 
-			background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+			background: linear-gradient(90deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
 		}
 
 		.still:hover .still_text {
@@ -169,23 +197,27 @@
 		}
 
 		.socials {
-			margin-top: 0.4em;
+			margin-top: 0.2em;
+			display: flex;
+			gap: 0.3em;
 		}
 
 		.socials img {
 			width: 0.8rem; 
 			filter: invert(1);
-
-			margin-right: 0.2em;
 		}
 
 		.socials a {
 			text-decoration: none;
 		}
 
+		.socials_footer {
+			display: flex;
+			gap: 1em;
+		}
+
 		.socials_footer img {
 			width: 1rem;
-			margin-right: 0.5em;
 		}
 
 		/* Extra small devices (phones, 600px and down) */
@@ -209,6 +241,15 @@
 				left: 70%;
 
     			transform: translate(-0%, -50%);
+			}
+
+			.still {
+				aspect-ratio: 21 / 9;
+			}
+
+			.still img {
+				margin-top: 0px !important;
+				margin-bottom: 0px !important;
 			}
 		}
 
@@ -264,7 +305,7 @@
 		</div>
 		<img class="header_signature" src="images/siganature-dely-1.png" alt="signature">
 	</div>
-	<div class="still">
+	<button class="still" onclick="window.location.href='projects/industrial_stus.html'">
 		<img src="images/vlcsnap-2025-02-12-05h42m36s319.png" style="margin-bottom: 2%;" alt="">
 		<div class="still_text">
 			<h2>
@@ -275,8 +316,8 @@
 				<code>Music video / 2024</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/vlcsnap-2025-02-12-08h59m53s992.png" style="margin-bottom: 8%;" alt="">
 		<div class="still_text">
 			<h2>
@@ -287,8 +328,8 @@
 				<code>Music video / 2024</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/vlcsnap-2025-02-12-05h35m26s403.png" style="margin-top: 2%;" alt="">
 		<div class="still_text">
 			<h2>
@@ -299,8 +340,8 @@
 				<code>Music video / 2023</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/seconds_01.00_00_59_09.Still005.png" style="margin-bottom: 1%;" alt="">
 		<div class="still_text">
 			<h2>
@@ -311,8 +352,8 @@
 				<code>Short / 2023</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/vlcsnap-2025-02-12-05h30m52s101.png" style="margin-top: 8%;" alt="">
 		<div class="still_text">
 			<h2>
@@ -323,8 +364,8 @@
 				<code>Short / 2023</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/02.00_00_57_11.Still002.png" alt="" style="margin-top: 6%;">
 		<div class="still_text">
 			<h2>
@@ -335,8 +376,8 @@
 				<code>Short / 2022</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/01.00_00_50_22.Still001.png" alt="">
 		<div class="still_text">
 			<h2>
@@ -347,8 +388,8 @@
 				<code>Short / 2022</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/03_1.00_02_50_03.Still004.png" alt="" style="margin-top: 8%;">
 		<div class="still_text">
 			<h2>
@@ -359,8 +400,8 @@
 				<code>Music video / 2022</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/02.00_00_44_24.Still008.png" alt="" style="margin-top: 20%;">
 		<div class="still_text">
 			<h2>
@@ -371,8 +412,8 @@
 				<code>Music video / 2022</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/Render2_1.00_02_32_23.Still007.png" alt="" style="margin-top: 10%;">
 		<div class="still_text">
 			<h2>
@@ -383,8 +424,8 @@
 				<code>Backstage video / 2021</code>
 			</div>
 		</div>
-	</div>
-	<div class="still">
+	</button>
+	<button class="still" onclick="window.location.href='projects/unreleased.html'">
 		<img src="images/main_final.00_00_39_04.Still003.png" alt="" style="margin-top: 15%">
 		<div class="still_text">
 			<h2>
@@ -395,7 +436,7 @@
 				<code>Music video / 2021</code>
 			</div>
 		</div>
-	</div>
+	</button>
 
 	<div style="display: flex; align-items: center; gap: 0.5em; flex-direction: column; padding: 2em 1em;">
 		<div>
