@@ -101,6 +101,10 @@ h1, h2, h3, h4, h5, h6 {
 	aspect-ratio: 4 / 3;
 }
 
+.gallery_21x9 img {
+	aspect-ratio: 21 / 9;
+}
+
 .gallery img:hover {
 	transform: scale(1.05);
 }
@@ -131,8 +135,27 @@ h1, h2, h3, h4, h5, h6 {
 	  
 	box-sizing: border-box;
 
-	max-width: 1200px;
-	max-height: 800px;
+	max-width: 1600px;
+	max-height: 1000px;
+}
+
+.gallery-dialog::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+  
+	display: block;
+	background-image: var(--g-bg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+
+	filter: blur(150px) contrast(0.7) brightness(0.5);
+
+	opacity: 0.8;
 }
 
 .unreleased_video {

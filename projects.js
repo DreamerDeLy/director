@@ -8,6 +8,8 @@ gallery_images.forEach((image) => {
 
 		container.classList.add('gallery-dialog');
 
+		container.style.setProperty('--g-bg', `url(${image.src})`);
+
 		const img = document.createElement('img');
 		img.src = image.src;
 
