@@ -25,6 +25,14 @@ a {
 	color: #ccc
 }
 
+h1, h2, h3, h4, h5, h6 {
+	/* color: #fff; */
+	font-family: "Jersey 15", serif;
+	letter-spacing: 0.1rem;
+	font-weight: normal;
+	font-size: 2.5rem;
+}
+
 .content {
 	padding: 1em;
 
@@ -42,6 +50,17 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	font-size: medium;
+}
+
+.footer {
+	padding: 2em;
+
+	width: 100%;
+	text-align: center;
+
+	box-sizing: border-box;
 }
 
 .description {
@@ -114,4 +133,43 @@ a {
 
 	max-width: 1200px;
 	max-height: 800px;
+}
+
+.unreleased_video {
+	background-color: black;
+
+	position: relative;
+
+	aspect-ratio: 21 / 9; 
+	overflow: hidden; 
+	border-radius: 3px;
+}
+
+.unreleased_video img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.unreleased_video video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.unreleased_video div {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: #00000060;
+
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+
+	font-size: x-large;
 }
